@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ASyncDAL
 {
+    
     public class Bus
     {
         public int ID { get; set; }

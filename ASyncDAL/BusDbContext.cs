@@ -15,5 +15,9 @@ namespace ASyncDAL
         }
 
         public System.Data.Entity.DbSet<ASyncDAL.Bus> Buses { get; set; }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Bus>().Map(x => x.ToTable("Bus"));
+        }
     }
 }
